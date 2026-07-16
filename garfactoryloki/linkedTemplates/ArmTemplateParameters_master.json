@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "garfactoryloki"
+		},
+		"AzureDataLakeStorage_accountKey": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"SqlServerbaserecommend_password": {
+			"value": ""
+		},
+		"AzureDataLakeStorage_properties_typeProperties_url": {
+			"value": "https://storageloki123.dfs.core.windows.net/"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "@{linkedService().server_name}"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "@{linkedService().data_name}"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "@{linkedService().user}"
+		},
+		"SqlServerbaserecommend_properties_typeProperties_server": {
+			"value": "abccompany.database.windows.net"
+		},
+		"SqlServerbaserecommend_properties_typeProperties_database": {
+			"value": "abcdfveb"
+		},
+		"SqlServerbaserecommend_properties_typeProperties_userName": {
+			"value": "loki"
+		},
+		"trigger_storage_properties_typeProperties_scope": {
+			"value": "/subscriptions/19f3eb1a-444f-463f-afda-1d66feea5daf/resourceGroups/AzureFundamentals/providers/Microsoft.Storage/storageAccounts/storageloki123"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
