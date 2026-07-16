@@ -1,0 +1,15 @@
+{
+	"name": "garfactoryloki",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2ae52a33-6ab3-45ff-b0a7-2d0011f17a55",
+		"tenantId": "73bfb54b-6e94-4131-b7c0-b1aa3573f339"
+	}
+}
